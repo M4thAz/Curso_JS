@@ -93,7 +93,7 @@ btnHold.addEventListener('click', function(){
     document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
     //checar se for 100
     //finalizar o game aos 100 pontos, se não, trocar para o próximo player
-    if(scores[activePlayer] >= 20){
+    if(scores[activePlayer] >= 100){
         isPlaying = false;
         diceEl.classList.add('hidden');
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
